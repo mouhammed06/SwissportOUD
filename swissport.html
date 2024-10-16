@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swissport Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+</head>
+<body>
+    <div class="flex-col min-h-screen">
+        <header class="sticky top-0 z-50 w-full border-b bg-background">
+            <div class="container flex h-14 items-center">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="Capture.PNG" alt="Logo" class="header-logo">
+                    <circle cx="50" cy="50" r="45" fill="#0056b3"/>
+                        <path d="M30 50 L50 30 L70 50 L50 70 Z" fill="white"/>
+                    </svg>
+                </a>
+                <nav class="ml-auto flex gap-4 sm:gap-6">
+                    <a class="text-sm font-medium hover:underline underline-offset-4" href="#accueil">Accueil</a>
+                    <a class="text-sm font-medium hover:underline underline-offset-4" href="#vols">Vols</a>
+                    <a class="text-sm font-medium hover:underline underline-offset-4" href="#plan">Plan</a>
+                    <a class="text-sm font-medium hover:underline underline-offset-4" href="#services">Services</a>
+                    <a class="text-sm font-medium hover:underline underline-offset-4" href="#aide">Aide</a>
+                    <a class="text-sm font-medium hover:underline underline-offset-4" href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <!-- Rest of the HTML remains the same -->
+        <main>
+            <img src="Capture100.PNG" alt="Body Image" class="body-image">
+        </main>
+            <main class="flex-1">
+            <section id="accueil" class="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-muted">
+                <div class="container px-4 md:px-6">
+                    <div class="flex flex-col items-center space-y-4 text-center">
+                        <div class="space-y-2">
+                            <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                                Bienvenue chez Swissport station OUJDA
+                            </h1>
+                            <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                                Votre partenaire de confiance pour des services aéroportuaires de qualité
+                            </p>
+                        </div>
+                        <div class="space-x-4">
+                            <button class="button">En savoir plus</button>
+                            <button class="button button-outline">Nos services</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="vols" class="w-full py-12 md:py-24 lg:py-32">
+                <div class="container px-4 md:px-6">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Vols</h2>
+                    <p class="mt-4 text-muted-foreground">Consultez les informations sur les vols en temps réel</p>
+                    <div class="mt-8 flex items-center space-x-2">
+                        <input type="text" placeholder="Numéro de vol" class="input">
+                        <button class="button">Rechercher</button>
+                    </div>
+                </div>
+            </section>
+            <section id="plan" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+                <div class="container px-4 md:px-6">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Plan de l'aéroport</h2>
+                    <p class="mt-4 text-muted-foreground">Trouvez facilement votre chemin dans l'aéroport</p>
+                    <div class="mt-8 aspect-video w-full bg-gray-200 rounded-lg flex items-center justify-center">
+                        <i data-lucide="map-pin" class="h-12 w-12 text-muted-foreground"></i>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="w-full py-12 md:py-24 lg:py-32">
+                <div class="container px-4 md:px-6">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nos Services</h2>
+                    <div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3" id="services-grid">
+                        <!-- Services will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+            <section id="aide" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+                <div class="container px-4 md:px-6">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Aide</h2>
+                    <p class="mt-4 text-muted-foreground">Besoin d'assistance ? Nous sommes là pour vous aider</p>
+                    <div class="mt-8 flex items-center space-x-4">
+                        <i data-lucide="headphones" class="h-6 w-6"></i>
+                        <span>Appelez-nous au 0611358709</span>
+                    </div>
+                    <button class="button mt-4">FAQ</button>
+                </div>
+            </section>
+            <section id="contact" class="w-full py-12 md:py-24 lg:py-32">
+                <div class="container px-4 md:px-6">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contactez-nous</h2>
+                    <p class="mt-4 text-muted-foreground">Nous sommes à votre écoute</p>
+                    <form class="mt-8 space-y-4">
+                        <input type="text" placeholder="Nom" class="input">
+                        <input type="email" placeholder="Email" class="input">
+                        <input type="text" placeholder="Sujet" class="input">
+                        <textarea class="textarea" placeholder="Message"></textarea>
+                        <button type="submit" class="button">Envoyer</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="w-full py-6 bg-muted">
+            <div class="container px-4 md:px-6">
+                <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="plane" class="h-6 w-6"></i>
+                        <span class="font-bold">Swissport</span>
+                        <span class="font-bold">bouhout mouhammed</span>
+
+                    </div>
+                    <p class="text-sm text-muted-foreground">© 2024 Swissport. Tous droits réservés.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-sm hover:underline underline-offset-4">Politique de confidentialité</a>
+                        <a href="#" class="text-sm hover:underline underline-offset-4">Conditions d'utilisation</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
